@@ -42,3 +42,4 @@ react-monorepo/
 - pnpm dev:docs - Run only the docs site
 - pnpm ui [component-name] - Add a new Shadcn UI component
 # monorepo-template
+# monorepo-template

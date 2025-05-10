@@ -1,0 +1,27 @@
+{
+  "name": "react-monorepo",
+  "version": "1.0.0",
+  "description": "A professional React monorepo setup with shared UI components",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --parallel --filter ./{apps/*} dev",
+    "build": "pnpm --recursive --filter ./{apps/*} build",
+    "preview": "pnpm --parallel --filter ./{apps/*} preview",
+    "dev:admin": "pnpm --filter ./apps/admin dev",
+    "dev:docs": "pnpm --filter ./apps/docs dev",
+    "build:admin": "pnpm --filter ./apps/admin build",
+    "build:docs": "pnpm --filter ./apps/docs build",
+    "preview:admin": "pnpm --filter ./apps/admin preview",
+    "preview:docs": "pnpm --filter ./apps/docs start",
+    "ui": "cd packages/ui && pnpm dlx shadcn@latest add"
+  },
+  "keywords": [
+    "monorepo",
+    "react",
+    "next.js",
+    "tailwindcss",
+    "shadcn-ui"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

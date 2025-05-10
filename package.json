@@ -4,7 +4,7 @@
   "description": "A professional React monorepo setup with shared UI components",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm --parallel --filter ./{apps/*} dev",
+    "dev": "pnpm --filter {apps/*} run dev",
     "build": "pnpm --recursive --filter ./{apps/*} build",
     "preview": "pnpm --parallel --filter ./{apps/*} preview",
     "dev:admin": "pnpm --filter ./apps/admin dev",
